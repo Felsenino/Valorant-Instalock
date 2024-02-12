@@ -6,7 +6,7 @@ USER_AGENT_SELECT = "iso"
 
 
 # variables 
-lockButtonX, lockButtonY = 960, 730
+lockButtonX, lockButtonY = 960, 730 #Res must be, 1920x1080
 agent = USER_AGENT_SELECT.lower()
 imgLocation = None
 imageFile = f'imgs/{agent}.png'
