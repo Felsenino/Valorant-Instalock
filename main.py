@@ -63,7 +63,7 @@ def selected(event):
 
     p.moveTo(imgLocation)
     p.click()
-    sleep(0.01)
+    #sleep(0.01)
 
     p.moveTo(lockButtonX, lockButtonY)
     p.click()
@@ -71,8 +71,8 @@ def selected(event):
 
 # window cfg
 window = tk.Tk() 
-window.geometry("150x20")
-window.title("Valorant Instalocker v0.1 by Felsen")
+window.geometry("475x25")
+window.title("Valorant Instalocker v0.2 by Felsen")
 window.resizable(False, False)
 window.configure(background="black")
 
@@ -103,8 +103,8 @@ agents = [
     "yoru"
 ]
 
-selector = ttk.Combobox(window, values = agents)
-selector.set("Pick an Option") # bug, can edit this text
+selector = ttk.Combobox(window, height=50, width=50,font=(25), values = agents)
+selector.set("Pick your agent") # bug, can edit this text
 selector.bind("<<ComboboxSelected>>", selected)
 selector.pack()
 
